@@ -1,0 +1,225 @@
+.name {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 125px;
+  font-weight: bold;
+  margin: 10px 0 5px 20px;
+  font-family: 'staatliches', cursive;
+  color: #edebe1;
+  transition: 1s ease-out;
+}
+
+.job-description {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 50px;
+  margin: 5px 0 0 20px;
+  font-family: 'staatliches', cursive;
+  color: #edebe1;
+  order: 3;
+  transition: 1s ease-out;
+}
+
+.header {
+  width: 70%;
+}
+
+.icon {
+  width: 30%;
+  margin: 1px;
+}
+
+.main-text {
+  font-size: 75px;
+  font-family: 'marcellus', serif;
+  color: #edebe1;
+  margin: 0 20px 100px;
+}
+
+.link {
+  color: #EDEBE1;
+  transition: letter-spacing 2s ease-in, background-color 2s ease-out;
+}
+
+.link:hover {
+  border-radius: 20px;
+  background-color: #8398a7;
+  letter-spacing: 2px;
+}
+
+.project {
+  align-items: center;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.project-pic {
+  box-shadow: 10px 15px 40px #000000;
+  border: 10px solid #edebe1;
+}
+
+.upper-main {
+  margin: 0 0 100px;
+}
+
+.mid-main {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer-header {
+  color: #edebe1;
+  font-family: 'staatliches', cursive;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-images {
+  display: flex;
+  margin: 0 300px;
+  align-items: center;
+}
+
+.caption {
+  margin-bottom: 1px;
+  text-align: center;
+  font-family: 'staatliches', cursive;
+  font-size: 50px;
+  color: #edebe1;
+}
+
+.contact-me {
+  margin: 0 0 2px;
+}
+
+.github {
+  margin: 0 0 30px;
+  font-family: 'marcellus', serif;
+  font-size: 30px;
+  color: #edebe1;
+  transition: letter-spacing 2s ease-in, background-color 2s ease-out;
+}
+
+.github:hover {
+  border-radius: 20px;
+  background-color: #8398a7;
+  letter-spacing: 2px;
+}
+
+header.scrolled {
+  height: 120px;
+  transition: 0.5s ease-out;
+}
+
+header.scrolled .name {
+  font-size: 75px;
+}
+
+header.scrolled .icon {
+  display: none;
+}
+
+header.scrolled .job-description, header.scrolled .name {
+  display: inline;
+  margin: 20px;
+}
+
+header.scrolled .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header.scrolled .job-description {
+  font-size: 35px;
+  margin: 0 0 0 20px;
+}
+
+body {
+  background-color: #da8080;
+}
+
+header {
+  height: 277px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+footer {
+  border-top: 2px solid #edebe1;
+}
+
+main {
+  background-color: inherit;
+  padding-top: 277px;
+}
+
+.header-container {
+  border-bottom: 2px solid #edebe1;
+  display: flex;
+  background-color: #da8080;
+}
+
+@media screen and (min-width: 768px) {
+  /* For iPad-Size devices */
+  .main-text {
+    font-size: 55px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* For low-res laptop / landscape tablet devices */
+  .main-text {
+    font-size: 35px;
+    margin: 20px;
+  }
+
+  .mid-main {
+    margin: 15px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .project {
+    margin: 0 30px 20px 0;
+  }
+
+  .footer-images {
+    margin: 1px;
+    justify-content: center;
+  }
+
+  .header {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  /* For hi-res laptops */
+   .container {
+    width: 1400px;
+    margin: 0 auto;
+  }
+
+  .header-container {
+    width: 1400px;
+    margin: 0 auto;
+  }
+
+  .mid-main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project {
+    margin: 0 10px 0 0;
+  }
+}
