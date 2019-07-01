@@ -1,39 +1,54 @@
+body {
+  margin: 0;
+}
+
 .name {
   text-transform: uppercase;
   text-align: left;
-  font-size: 125px;
+  font-size: 40px;
   font-weight: bold;
-  margin: 10px 0 5px 20px;
+  margin: 5px 0 5px 20px;
   font-family: 'staatliches', cursive;
   color: #edebe1;
-  transition: 1s ease-out;
+  transition: 0.5s ease-out;
+  white-space: nowrap;
 }
 
 .job-description {
   text-transform: uppercase;
   text-align: left;
-  font-size: 50px;
-  margin: 5px 0 0 20px;
+  font-size: 20px;
+  margin: 5px 0 10px 20px;
   font-family: 'staatliches', cursive;
   color: #edebe1;
   order: 3;
-  transition: 1s ease-out;
+  transition: 0.5s ease-out;
+  white-space: nowrap;
 }
 
-.header {
-  width: 70%;
+.header-container {
+  border-bottom: 2px solid #edebe1;
+  display: flex;
+  background-color: #da8080;
+  height: 100px;
+  transition: 0.5s ease-out;
 }
 
 .icon {
-  width: 30%;
+  /* width: 20%; */
+  margin: 1px 1px 1px 20px;
+  font-size: 80px;
+}
+
+.user-logo {
   margin: 1px;
 }
 
 .main-text {
-  font-size: 75px;
+  font-size: 25px;
   font-family: 'marcellus', serif;
   color: #edebe1;
-  margin: 0 20px 100px;
+  margin: 10px 20px 30px 20px;
 }
 
 .link {
@@ -48,7 +63,6 @@
 }
 
 .project {
-  align-items: center;
   text-align: center;
   margin: 0 0 30px;
 }
@@ -59,7 +73,7 @@
 }
 
 .upper-main {
-  margin: 0 0 100px;
+  margin: 0 0 30px;
 }
 
 .mid-main {
@@ -79,26 +93,26 @@
 
 .footer-images {
   display: flex;
-  margin: 0 300px;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .caption {
-  margin-bottom: 1px;
+  margin: 10px 0;
   text-align: center;
   font-family: 'staatliches', cursive;
-  font-size: 50px;
+  font-size: 40px;
   color: #edebe1;
 }
 
 .contact-me {
-  margin: 0 0 2px;
+  margin: 10px 0 2px;
+  font-size: 50px;
 }
 
 .github {
   margin: 0 0 30px;
   font-family: 'marcellus', serif;
-  font-size: 30px;
+  font-size: 25px;
   color: #edebe1;
   transition: letter-spacing 2s ease-in, background-color 2s ease-out;
 }
@@ -110,12 +124,20 @@
 }
 
 header.scrolled {
-  height: 120px;
-  transition: 0.5s ease-out;
+  height: 50px;
 }
 
 header.scrolled .name {
-  font-size: 75px;
+  font-size: 25px;
+}
+
+header.scrolled .header-container {
+  height: 50px;
+}
+
+header.scrolled .job-description {
+  font-size: 15px;
+  margin: 0 0 0 20px;
 }
 
 header.scrolled .icon {
@@ -133,17 +155,12 @@ header.scrolled .header {
   align-items: center;
 }
 
-header.scrolled .job-description {
-  font-size: 35px;
-  margin: 0 0 0 20px;
-}
-
 body {
   background-color: #da8080;
 }
 
 header {
-  height: 277px;
+  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
@@ -157,69 +174,73 @@ footer {
 
 main {
   background-color: inherit;
-  padding-top: 277px;
-}
-
-.header-container {
-  border-bottom: 2px solid #edebe1;
-  display: flex;
-  background-color: #da8080;
+  padding-top: 100px;
 }
 
 @media screen and (min-width: 768px) {
   /* For iPad-Size devices */
   .main-text {
-    font-size: 55px;
+    font-size: 40px;
+  }
+  .header-container {
+    height: 150px;
+    transition: 0.1s ease-out;
+  }
+  .name {
+    font-size: 60px;
+  }
+  .job-description {
+    font-size: 40px;
+  }
+  .icon {
+    margin-left: 60px;
+    font-size: 120px;
+  }
+  .footer-images {
+    justify-content: center;
+  }
+  header.scrolled .header-container {
+    height: 75px;
+  }
+  header.scrolled .name {
+    font-size: 40px;
+  }
+  header.scrolled .job-description {
+    font-size: 25px;
+  }
+  main {
+    padding-top: 152px;
+  }
+  .mid-main {
+    flex-direction: row;
+    margin: 0 20px;
+    justify-content: space-around;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   /* For low-res laptop / landscape tablet devices */
   .main-text {
-    font-size: 35px;
     margin: 20px;
   }
-
+  .upper-main {
+    margin-bottom: 50px;
+  }
   .mid-main {
     margin: 15px;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
-
   .project {
     margin: 0 30px 20px 0;
   }
-
   .footer-images {
     margin: 1px;
-    justify-content: center;
   }
-
-  .header {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  /* For hi-res laptops */
-   .container {
-    width: 1400px;
+  .container {
+    width: 1280px;
     margin: 0 auto;
   }
-
   .header-container {
-    width: 1400px;
+    width: 1280px;
     margin: 0 auto;
-  }
-
-  .mid-main {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .project {
-    margin: 0 10px 0 0;
   }
 }
