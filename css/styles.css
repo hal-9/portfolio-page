@@ -68,8 +68,15 @@ body {
 }
 
 .project-pic {
-  box-shadow: 10px 15px 40px #000000;
+  box-shadow: 10px 15px 30px #000000;
   border: 10px solid #edebe1;
+}
+
+.project-pic:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .upper-main {
@@ -114,13 +121,6 @@ body {
   font-family: 'marcellus', serif;
   font-size: 25px;
   color: #edebe1;
-  transition: letter-spacing 2s ease-in, background-color 2s ease-out;
-}
-
-.github:hover {
-  border-radius: 20px;
-  background-color: #8398a7;
-  letter-spacing: 2px;
 }
 
 header.scrolled {
@@ -243,4 +243,71 @@ main {
     width: 1280px;
     margin: 0 auto;
   }
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
