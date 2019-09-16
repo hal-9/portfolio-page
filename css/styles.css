@@ -117,11 +117,21 @@ body {
   font-size: 50px;
 }
 
-.github {
+/* .github {
   margin: 0 0 30px;
-  font-family: 'marcellus', serif;
+  font-family: 'marcellus', serif; DELETE?!?!??!?!
   font-size: 25px;
   color: #edebe1;
+} */
+
+.github {
+ width: 100px;
+ height: 50px;
+}
+
+.mailto, .linkedin {
+ width: 100px;
+ height: 50px;
 }
 
 header.scrolled {
