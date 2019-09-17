@@ -7,7 +7,7 @@ body {
   text-align: left;
   font-size: 40px;
   font-weight: bold;
-  margin: 5px 0 5px 20px;
+  margin: 5px 0 5px 40px;
   font-family: 'staatliches', cursive;
   color: #edebe1;
   transition: 0.5s ease-out;
@@ -18,7 +18,7 @@ body {
   text-transform: uppercase;
   text-align: left;
   font-size: 20px;
-  margin: 5px 0 10px 20px;
+  margin: 5px 0 10px 40px;
   font-family: 'staatliches', cursive;
   color: #edebe1;
   order: 3;
@@ -41,14 +41,14 @@ body {
 }
 
 .user-logo {
-  margin: 1px;
+  margin-top: -6px;
 }
 
 .main-text {
   font-size: 25px;
   font-family: 'marcellus', serif;
   color: #edebe1;
-  margin: 10px 20px 30px 20px;
+  margin: 40px;
 }
 
 .link {
@@ -129,9 +129,12 @@ body {
  height: 50px;
 }
 
-.mailto, .linkedin {
+.mailto {
  width: 100px;
- height: 50px;
+}
+
+.linkedin {
+  width: 80px;
 }
 
 header.scrolled {
