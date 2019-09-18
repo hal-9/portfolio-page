@@ -234,9 +234,6 @@ main {
 
 @media screen and (min-width: 1280px) {
   /* For low-res laptop / landscape tablet devices */
-  .main-text {
-    margin: 20px;
-  }
   .upper-main {
     margin-bottom: 50px;
   }
