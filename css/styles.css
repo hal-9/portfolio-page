@@ -45,7 +45,7 @@ body {
 }
 
 .main-text {
-  font-size: 25px;
+  font-size: 26px;
   font-family: 'marcellus', serif;
   color: #edebe1;
   margin: 40px;
@@ -101,7 +101,8 @@ body {
 
 .footer-images {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-top: -15px;
 }
 
 .caption {
@@ -117,13 +118,6 @@ body {
   font-size: 50px;
 }
 
-/* .github {
-  margin: 0 0 30px;
-  font-family: 'marcellus', serif; DELETE?!?!??!?!
-  font-size: 25px;
-  color: #edebe1;
-} */
-
 .github {
  width: 100px;
  height: 50px;
@@ -134,7 +128,17 @@ body {
 }
 
 .linkedin {
-  width: 80px;
+  width: 60px;
+  margin-top: 20px;
+}
+
+.imprint {
+  font-size: 20px;
+  font-family: 'staatliches', cursive;
+  color: #edebe1;
+  text-decoration: none;
+  text-align: center;
+  margin-top: -15px;
 }
 
 header.scrolled {
@@ -242,9 +246,6 @@ main {
   }
   .project {
     margin: 0 30px 20px 0;
-  }
-  .footer-images {
-    margin: 1px;
   }
   .container {
     width: 1280px;
