@@ -45,7 +45,7 @@ body {
 }
 
 .main-text {
-  font-size: 26px;
+  font-size: 20px;
   font-family: 'marcellus', serif;
   color: #edebe1;
   margin: 40px;
@@ -58,9 +58,7 @@ body {
 }
 
 .link:hover {
-  border-radius: 20px;
-  background-color: #8398a7;
-  letter-spacing: 2px;
+  /*animation*/
 }
 
 .project {
@@ -97,12 +95,17 @@ body {
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 20px;
 }
 
 .footer-images {
   display: flex;
   justify-content: center;
   margin-top: -15px;
+}
+
+.imprint {
+  margin-bottom: 20px;
 }
 
 .caption {
