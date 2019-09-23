@@ -121,7 +121,7 @@ body {
 
 .contact-me {
   margin: 10px 0 2px;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .github {
@@ -139,7 +139,7 @@ body {
 }
 
 .imprint {
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'staatliches', cursive;
   color: #edebe1;
   text-decoration: none;
