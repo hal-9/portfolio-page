@@ -54,11 +54,11 @@ body {
 .link {
   border-radius: 20px;
   color: #EDEBE1;
-  transition: letter-spacing 2s ease-in, background-color 2s ease-out;
+  transition: 2s;
 }
 
 .link:hover {
-  /*animation*/
+  color: #97a2f6;
 }
 
 .project {
