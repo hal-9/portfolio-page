@@ -14,8 +14,8 @@ body {
   margin: 0 auto;
 }
 
-.name,
-.job-description {
+.header__name,
+.header__job-description {
   text-transform: uppercase;
   text-align: left;
   white-space: nowrap;
@@ -24,13 +24,11 @@ body {
   margin: 5px 0 5px 40px;
 }
 
-.name {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: 'staatliches', cursive;
+.header__name {
+  font-size: 60px;
 }
 
-.job-description {
+.header__job-description {
   font-size: 20px;
   order: 3;
   display: block;
@@ -42,16 +40,6 @@ body {
   background-color: #262021;
   height: 100px;
   transition: 0.5s ease-out;
-}
-
-.icon {
-  /* width: 20%; */
-  margin: 1px 1px 1px 20px;
-  font-size: 80px;
-}
-
-.user-logo {
-  margin-top: -6px;
 }
 
 .main-text {
