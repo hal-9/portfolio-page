@@ -1,35 +1,45 @@
 body {
   margin: 0;
+  background-color: #262021;
+  color: #DBD3A9;
+  font-family: 'marcellus', serif;
 }
 
-.name {
-  text-transform: uppercase;
-  text-align: left;
-  font-size: 40px;
-  font-weight: bold;
-  margin: 5px 0 5px 40px;
-  font-family: 'staatliches', cursive;
-  color: #edebe1;
-  transition: 0.5s ease-out;
-  white-space: nowrap;
+::selection {
+  background-color: #C13A35;
 }
 
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.name,
 .job-description {
   text-transform: uppercase;
   text-align: left;
-  font-size: 20px;
-  margin: 5px 0 10px 40px;
-  font-family: 'staatliches', cursive;
-  color: #edebe1;
-  order: 3;
-  transition: 0.5s ease-out;
   white-space: nowrap;
+  transition: 0.5s ease-out;
+  font-family: 'staatliches', cursive;
+  margin: 5px 0 5px 40px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'staatliches', cursive;
+}
+
+.job-description {
+  font-size: 20px;
+  order: 3;
+  display: block;
 }
 
 .header-container {
-  border-bottom: 2px solid #edebe1;
+  border-bottom: 2px solid #C13A35;
   display: flex;
-  background-color: #41465B;
+  background-color: #262021;
   height: 100px;
   transition: 0.5s ease-out;
 }
@@ -46,19 +56,17 @@ body {
 
 .main-text {
   font-size: 25px;
-  font-family: 'marcellus', serif;
-  color: #edebe1;
   margin: 40px;
 }
 
 .link {
+  color: #DBD3A9;
   border-radius: 20px;
-  color: #EDEBE1;
   transition: 2s;
 }
 
 .link:hover {
-  color: #97a2f6;
+  color: #C13A35;
 }
 
 .project {
@@ -68,7 +76,7 @@ body {
 
 .project-pic {
   box-shadow: 10px 15px 30px #000000;
-  border: 10px solid #edebe1;
+  border: 2px solid #DBD3A9;
   filter: grayscale(70%);
   transition: 0.5s;
 }
@@ -93,7 +101,6 @@ body {
 }
 
 .footer-header {
-  color: #edebe1;
   font-family: 'staatliches', cursive;
   font-size: 50px;
   text-transform: uppercase;
@@ -116,7 +123,6 @@ body {
   text-align: center;
   font-family: 'staatliches', cursive;
   font-size: 40px;
-  color: #edebe1;
 }
 
 .contact-me {
@@ -141,7 +147,6 @@ body {
 .imprint {
   font-size: 15px;
   font-family: 'staatliches', cursive;
-  color: #edebe1;
   text-decoration: none;
   text-align: center;
   margin-top: -15px;
@@ -179,10 +184,6 @@ header.scrolled .header {
   align-items: center;
 }
 
-body {
-  background-color: #41465B;
-}
-
 header {
   height: 100px;
   position: fixed;
@@ -193,7 +194,7 @@ header {
 }
 
 footer {
-  border-top: 2px solid #edebe1;
+  border-top: 2px solid #DBD3A9;
 }
 
 main {
@@ -206,35 +207,45 @@ main {
   .main-text {
     font-size: 30px;
   }
+
   .header-container {
     height: 150px;
     transition: 0.1s ease-out;
   }
+
   .name {
     font-size: 60px;
   }
+
   .job-description {
     font-size: 40px;
   }
+
   .icon {
     margin-left: 60px;
     font-size: 120px;
   }
+
   .footer-images {
     justify-content: center;
   }
+
   header.scrolled .header-container {
     height: 75px;
   }
+
   header.scrolled .name {
     font-size: 40px;
   }
+
   header.scrolled .job-description {
     font-size: 25px;
   }
+
   main {
     padding-top: 152px;
   }
+
   .mid-main {
     flex-direction: row;
     margin: 0 20px;
@@ -247,85 +258,17 @@ main {
   .upper-main {
     margin-bottom: 50px;
   }
+
   .mid-main {
     margin: 15px;
   }
+
   .project {
     margin: 0 30px 20px 0;
   }
-  .container {
-    width: 1280px;
-    margin: 0 auto;
-  }
+
   .header-container {
     width: 1280px;
     margin: 0 auto;
   }
-}
-
-@-webkit-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-       transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
 }

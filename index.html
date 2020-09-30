@@ -12,119 +12,105 @@
    rel="stylesheet">
 </head>
 <body>
-<div class="container">
-  <!-- Entire Page in a container -->
-  <header>
-    <div class="header-container">
-      <div class="header">
-        <h1 class="name">Tuncay Aydin</h1>
-        <h2 class="job-description">Front-End Web-Developer</h2>
+  <div class="page-container">
+    <header>
+      <div class="header-container">
+        <div class="header">
+          <span class="header__name">Tuncay Aydin</span>
+          <span class="header__job-description">Front-End Web-Developer</span>
+        </div>
+        <div class="header--user-logo">
+          <p>👨🏽‍💻</p>
+        </div>
       </div>
-      <div class="icon">
-        <p class="user-logo">👨🏽‍💻</p>
-      </div>
+    </header>
+    <main>
+    <div class="introduction-container" >
+      <p class="introduction__text">Hi, i'm a frontend web developer currently working at <a class="link" href="https://www.digitaspixelpark.com/">Digitas Pixelpark.</a></p>
+      <p class="introduction__text">To kickstart a career as a front-end web developer I have graduated from
+        <a class="introcuction__link" href="https://www.udacity.com" target="_blank">udacity.com</a> 🎓,
+        completing the Nanodegrees <a class="link" href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000" target="_blank">'Introduction To Programming'</a> and
+        <a class="introduction__link" href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" target="_blank">'Front-End Web Developer'</a>.
+      </p>
+      <p class="introduction__text">Take a look at what I've built during my online courses...</p>
     </div>
-  </header>
-  <main>
-   <div class="upper-main">
-     <p class="main-text">I have recently graduated from
-     <a class="link" href="https://www.udacity.com" target="_blank">udacity.com</a> 🎓,
-     completing the Nanodegrees <a class="link"
-     href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000" target="_blank">
-     'Introduction To Programming'</a> and
-     <a class="link"
-     href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011" target="_blank">
-     'Front-End Web Developer'</a>.
-     </p>
-     <p class="main-text">
-     </p>
-     <p class="main-text">Take a look at what I've built in the past couple of
-      months...
-     </p>
-   </div>
-   <div class="mid-main">
-     <div class="project">
-       <a href="https://hal-9.github.io/memory-game/" target="_blank">
-       <img src="img/memory-game.png" class="project-pic" alt="Screenshot of Memory Game">
-       </a>
-       <h3 class="caption">Memory Game</h3>
-       <a href="https://github.com/hal-9/Memory-Game"
-       target="_blank">
-         <img src="img/github.svg" class="github">
-       </a>
-     </div>
-     <div class="project">
-       <a href="https://hal-9.github.io/arcade-game/" target="_blank">
-       <img src="img/arcade-game.png" class="project-pic" alt="Screenshot of Classic Arcade Game">
-       </a>
-       <h3 class="caption">Arcade Game Clone</h3>
-       <a href="https://github.com/hal-9/arcade-game"
-        target="_blank">
-         <img src="img/github.svg" class="github">
-       </a>
-     </div>
-     <div class="project">
-       <a href="https://github.com/hal-9/feedreader-testing" target="_blank">
-       <img src="img/feedreader-testing.png" class="project-pic" alt="Screenshot of a Jasmine Test Suite">
-       </a>
-       <h3 class="caption">Feed Reader Testing</h3>
-       <a href="https://github.com/hal-9/feedreader-testing"
-         target="_blank">
-         <img src="img/github.svg" class="github">
-       </a>
-     </div>
-     <div class="project">
-       <a href="https://hal-9.github.io/restaurant-reviews-app" target="_blank">
-         <img src="img/restaurant.png" class="project-pic" alt="Screenshot of a Restaurant Review App">
-       </a>
-       <h3 class="caption">Restaraunt Reviews</h3>
-       <a href="https://github.com/hal-9/restaurant-reviews-app" target="_blank">
-         <img src="img/github.svg" class="github">
-       </a>
-     </div>
-     <div class="project">
-       <a href="https://hal-9.github.io/pixel-art-maker/" target="_blank">
-       <img src="img/art.png" class="project-pic" alt="Screenshot of the Pixel Art Maker"
-        alt="project1">
-       </a>
-       <h3 class="caption">Pixel-Art Maker</h3>
-       <a href="https://github.com/hal-9/pixel-art-maker"
-       target="_blank">
-         <img src="img/github.svg" class="github">
-       </a>
-     </div>
-     <div class="project">
-       <a href="https://github.com/hal-9/python-projects" target="_blank">
-       <img src="img/python.png" class="project-pic" alt="Python Logo">
-       </a>
-       <h3 class="caption">Python Projects</h3>
-       <a href="https://github.com/hal-9/python-projects"
-       target="_blank">
-         <img src="img/github.svg" class="github">
-       </a>
-     </div>
-     <p class="main-text"> When I don't code, I love spending time with my kids,
-        watching movies, playing videogames, making and listening to music.</p>
-   </div>
-   </main>
-   <footer>
-     <div class="footer-header">
-       <h3 class="contact-me">Contact Me</h3>
-     </div>
-     <div class="footer-images">
-      <a href="mailto:tuncay-aydin@posteo.de" class="mailto">
-         <img src="img/mail.svg">
-      </a>
-       <a href="https://www.linkedin.com/in/tuncay-aydin-30a50218a/"
-       target="_blank" class="linkedin">
-         <img src="img/linkedin.svg">
-      </a>
-     </div>
-     <div class="imprint">
-       <a href="./impressum.html" class="imprint" target="_blank">Imprint</a>
-     </div>
-   </footer>
-   </div>
-  <script src="js/scripts.js"></script>
+    <div class="projects-container">
+      <div class="project">
+        <a href="https://hal-9.github.io/memory-game/" target="_blank">
+          <img src="img/memory-game.png" class="project__pic" alt="Screenshot of Memory Game">
+        </a>
+        <h2 class="project__caption">Memory Game</h2>
+        <a href="https://github.com/hal-9/Memory-Game" target="_blank">
+          <img src="img/github.svg" class="project__github">
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://hal-9.github.io/arcade-game/" target="_blank">
+        <img src="img/arcade-game.png" class="project__pic" alt="Screenshot of Classic Arcade Game">
+        </a>
+        <h3 class="project__caption">Arcade Game Clone</h3>
+        <a href="https://github.com/hal-9/arcade-game" target="_blank">
+          <img src="img/github.svg" class="project__github">
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/hal-9/feedreader-testing" target="_blank">
+        <img src="img/feedreader-testing.png" class="project__pic" alt="Screenshot of a Jasmine Test Suite">
+        </a>
+        <h3 class="project__caption">Feed Reader Testing</h3>
+        <a href="https://github.com/hal-9/feedreader-testing" target="_blank">
+          <img src="img/github.svg" class="project__github">
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://hal-9.github.io/restaurant-reviews-app" target="_blank">
+          <img src="img/restaurant.png" class="project__pic" alt="Screenshot of a Restaurant Review App">
+        </a>
+        <h3 class="project__caption">Restaraunt Reviews</h3>
+        <a href="https://github.com/hal-9/restaurant-reviews-app" target="_blank">
+          <img src="img/github.svg" class="project__github">
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://hal-9.github.io/pixel-art-maker/" target="_blank">
+          <img src="img/art.png" class="project__pic" alt="Screenshot of the Pixel Art Maker"
+          alt="project1">
+        </a>
+        <h3 class="project__caption">Pixel-Art Maker</h3>
+        <a href="https://github.com/hal-9/pixel-art-maker" target="_blank">
+          <img src="img/github.svg" class="project__github">
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/hal-9/python-projects" target="_blank">
+          <img src="img/python.png" class="project__pic" alt="Python Logo">
+        </a>
+        <h3 class="project__caption">Python Projects</h3>
+        <a href="https://github.com/hal-9/python-projects" target="_blank">
+          <img src="img/github.svg" class="project__github">
+        </a>
+      </div>
+      <p class="project__text"> When I don't code, I love spending time with my kids, watching movies, playing videogames, making and listening to music.</p>
+    </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <h2 class="footer__contact">Contact Me</h2>
+        <div class="footer__images">
+        <a href="mailto:tuncay-aydin@posteo.de" class="footer__mailto">
+            <img src="img/mail.svg">
+        </a>
+          <a href="https://www.linkedin.com/in/tuncay-aydin-30a50218a/"
+          target="_blank" class="footer__linkedin">
+            <img src="img/linkedin.svg">
+        </a>
+        </div>
+        <div class="footer__imprint">
+          <a href="./impressum.html" class="footer__imprint" target="_blank">Imprint</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="js/scripts.js"></script>
 </body>
 </html>
