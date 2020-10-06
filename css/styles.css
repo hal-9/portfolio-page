@@ -1,262 +1,33 @@
 body {
-  margin: 0;
-  background-color: #262021;
-  color: #DBD3A9;
-  font-family: 'marcellus', serif;
+  background: #3F3E45;
+  color: #D3EBE8;
+}
+body a {
+  color: #D3EBE8;
 }
 
-::selection {
-  background-color: #C13A35;
+body {
+  background: #3F3E45;
+  color: #D3EBE8;
+}
+body a {
+  color: #D3EBE8;
 }
 
-.page-container {
-  max-width: 1280px;
-  margin: 0 auto;
+body {
+  background: #3F3E45;
+  color: #D3EBE8;
+}
+body a {
+  color: #D3EBE8;
 }
 
-.header__name,
-.header__job-description {
-  text-transform: uppercase;
-  text-align: left;
-  white-space: nowrap;
-  transition: 0.5s ease-out;
-  font-family: 'staatliches', cursive;
-  margin: 5px 0 5px 40px;
+body {
+  background: #3F3E45;
+  color: #D3EBE8;
+}
+body a {
+  color: #D3EBE8;
 }
 
-.header__name {
-  font-size: 60px;
-}
-
-.header__job-description {
-  font-size: 20px;
-  order: 3;
-  display: block;
-}
-
-.header-container {
-  border-bottom: 2px solid #C13A35;
-  display: flex;
-  background-color: #262021;
-  height: 100px;
-  transition: 0.5s ease-out;
-}
-
-.main-text {
-  font-size: 25px;
-  margin: 40px;
-}
-
-.link {
-  color: #DBD3A9;
-  border-radius: 20px;
-  transition: 2s;
-}
-
-.link:hover {
-  color: #C13A35;
-}
-
-.project {
-  text-align: center;
-  margin: 0 0 30px;
-}
-
-.project-pic {
-  box-shadow: 10px 15px 30px #000000;
-  border: 2px solid #DBD3A9;
-  filter: grayscale(70%);
-  transition: 0.5s;
-}
-
-.project-pic:hover {
-  filter: grayscale(0%);
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-.upper-main {
-  margin: 0 0 30px;
-}
-
-.mid-main {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.footer-header {
-  font-family: 'staatliches', cursive;
-  font-size: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footer-images {
-  display: flex;
-  justify-content: center;
-  margin-top: -15px;
-}
-
-.imprint {
-  margin-bottom: 20px;
-}
-
-.caption {
-  margin: 25px 0;
-  text-align: center;
-  font-family: 'staatliches', cursive;
-  font-size: 40px;
-}
-
-.contact-me {
-  margin: 10px 0 2px;
-  font-size: 30px;
-}
-
-.github {
- width: 100px;
- height: 50px;
-}
-
-.mailto {
- width: 100px;
-}
-
-.linkedin {
-  width: 60px;
-  margin-top: 20px;
-}
-
-.imprint {
-  font-size: 15px;
-  font-family: 'staatliches', cursive;
-  text-decoration: none;
-  text-align: center;
-  margin-top: -15px;
-}
-
-header.scrolled {
-  height: 50px;
-}
-
-header.scrolled .name {
-  font-size: 25px;
-}
-
-header.scrolled .header-container {
-  height: 50px;
-}
-
-header.scrolled .job-description {
-  font-size: 15px;
-  margin: 0 0 0 20px;
-}
-
-header.scrolled .icon {
-  display: none;
-}
-
-header.scrolled .job-description, header.scrolled .name {
-  display: inline;
-  margin: 20px;
-}
-
-header.scrolled .header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-header {
-  height: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-footer {
-  border-top: 2px solid #DBD3A9;
-}
-
-main {
-  background-color: inherit;
-  padding-top: 100px;
-}
-
-@media screen and (min-width: 768px) {
-  /* For iPad-Size devices */
-  .main-text {
-    font-size: 30px;
-  }
-
-  .header-container {
-    height: 150px;
-    transition: 0.1s ease-out;
-  }
-
-  .name {
-    font-size: 60px;
-  }
-
-  .job-description {
-    font-size: 40px;
-  }
-
-  .icon {
-    margin-left: 60px;
-    font-size: 120px;
-  }
-
-  .footer-images {
-    justify-content: center;
-  }
-
-  header.scrolled .header-container {
-    height: 75px;
-  }
-
-  header.scrolled .name {
-    font-size: 40px;
-  }
-
-  header.scrolled .job-description {
-    font-size: 25px;
-  }
-
-  main {
-    padding-top: 152px;
-  }
-
-  .mid-main {
-    flex-direction: row;
-    margin: 0 20px;
-    justify-content: space-around;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  /* For low-res laptop / landscape tablet devices */
-  .upper-main {
-    margin-bottom: 50px;
-  }
-
-  .mid-main {
-    margin: 15px;
-  }
-
-  .project {
-    margin: 0 30px 20px 0;
-  }
-
-  .header-container {
-    width: 1280px;
-    margin: 0 auto;
-  }
-}
+/*# sourceMappingURL=styles.css.map */
