@@ -1,15 +1,27 @@
 .footer-container
     text-align: center
 
-    .footer__mailto,
-    .footer__linkedin
-        width: 50px
     
-    .footer__links-container
+    .footer__external-links-container
         display: flex
+        justify-content: center
+        padding-bottom: 20px
 
-.footer__link:nth-child(1)
-    border-right: 2px solid $secondary-color
-    
-.footer__link
-    padding: 0 30px
+        .footer__external-link
+            padding: 0 30px
+
+        .footer__external-link:nth-child(1),
+        .footer__external-link:nth-child(2)
+            border-right: 1px solid $secondary-color
+
+        .footer__mailto,
+        .footer__linkedin,
+        .footer__github
+            width: 50px
+        
+    .footer__internal-links-container
+        display: flex
+        flex-direction: column
+
+        .footer__internal-link
+            margin-bottom: 15px

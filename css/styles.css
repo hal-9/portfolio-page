@@ -59,20 +59,29 @@ body p {
 .footer-container {
   text-align: center;
 }
-.footer-container .footer__mailto,
-.footer-container .footer__linkedin {
+.footer-container .footer__external-links-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.footer-container .footer__external-links-container .footer__external-link {
+  padding: 0 30px;
+}
+.footer-container .footer__external-links-container .footer__external-link:nth-child(1),
+.footer-container .footer__external-links-container .footer__external-link:nth-child(2) {
+  border-right: 1px solid #D3EBE8;
+}
+.footer-container .footer__external-links-container .footer__mailto,
+.footer-container .footer__external-links-container .footer__linkedin,
+.footer-container .footer__external-links-container .footer__github {
   width: 50px;
 }
-.footer-container .footer__links-container {
+.footer-container .footer__internal-links-container {
   display: flex;
+  flex-direction: column;
 }
-
-.footer__link:nth-child(1) {
-  border-right: 2px solid #D3EBE8;
-}
-
-.footer__link {
-  padding: 0 30px;
+.footer-container .footer__internal-links-container .footer__internal-link {
+  margin-bottom: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
