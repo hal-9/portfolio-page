@@ -14,26 +14,26 @@ body p {
   font-size: 16px;
 }
 
-.logo-container__tuncay {
-  width: 200px;
-}
-
-.logo-container {
+.logo {
   margin-left: auto;
   margin-right: auto;
   max-width: 200px;
   max-height: 175px;
 }
+.logo .logo__tuncay-memoji {
+  width: 200px;
+}
+.logo .logo__tuncay-real {
+  display: none;
+}
 
-.introdcution-container {
+.introdcution {
   text-align: center;
 }
-
-.introduction__intro {
+.introdcution .introduction__text--big {
   font-size: 30px;
 }
-
-.introduction__text {
+.introdcution .introduction__text--small {
   font-size: 24px;
 }
 
@@ -73,7 +73,7 @@ body p {
 }
 .footer-container .footer__external-links-container .footer__mailto,
 .footer-container .footer__external-links-container .footer__linkedin,
-.footer-container .footer__external-links-container .footer__github {
+.footer-container .footer__external-links-container .footer__twitter {
   width: 50px;
 }
 .footer-container .footer__internal-links-container {
